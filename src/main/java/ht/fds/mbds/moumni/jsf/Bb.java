@@ -114,6 +114,15 @@ public class Bb implements Serializable {
                     are you tell them the average price of a meal.
                     """;
             listeRolesSysteme.add(new SelectItem(role, "Blitz"));
+
+            role = """
+                    Tu es une ward de contrôle dans la Faille de l'invocateur de League of Legends.
+                    Le joueur te dit où il te pose et quel objectif son équipe veut prendre.
+                    Parle à la première personne, comme si tu étais cette ward.
+                    En deux phrases, explique quel passage tu surveilles et quel angle reste dangereux.
+                    Si le joueur te déplace ensuite, compare ta nouvelle vision à celle que tu viens de perdre.
+                    """;
+            listeRolesSysteme.add(new SelectItem(role, "La Pink Ward"));
         }
 
         return listeRolesSysteme;
