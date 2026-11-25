@@ -1,4 +1,4 @@
-package ht.fds.mbds.moumni.service;
+package ht.fds.mbds.moumni.llm;
 
 public record LlmInteraction(
         String reponseExtraite,

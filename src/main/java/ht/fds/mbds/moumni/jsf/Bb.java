@@ -1,7 +1,7 @@
 package ht.fds.mbds.moumni.jsf;
 
-import ht.fds.mbds.moumni.service.JsonAdapterPourGemini;
-import ht.fds.mbds.moumni.service.LlmInteraction;
+import ht.fds.mbds.moumni.llm.JsonAdapterPourGemini;
+import ht.fds.mbds.moumni.llm.LlmInteraction;
 import jakarta.faces.application.FacesMessage;
 import jakarta.faces.context.FacesContext;
 import jakarta.faces.model.SelectItem;
@@ -50,7 +50,7 @@ public class Bb implements Serializable {
 
         // Transmettre le rôle choisi au début de la conversation.
         if (conversation.isEmpty()) {
-            jsonAdapter.setRoleSysteme(roleSysteme);
+            jsonAdapter.setSystemRole(roleSysteme);
         }
 
         try {
